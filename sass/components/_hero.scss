@@ -17,7 +17,7 @@
     linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-        url(../../images/bg-image-mob-1x.jpg);
+        url(../images/bg-image-mob-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -26,7 +26,7 @@
         linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/bg-image-mob-2x.jpg)
+            url(../images/bg-image-mob-2x.jpg)
     }
 
     @include mobile{padding:118px 60px;}
@@ -36,13 +36,13 @@
         linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/bg-image-tab-1x.jpg);
+            url(../images/bg-image-tab-1x.jpg);
             @include retina {
                 background-image:
                 linear-gradient(
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                    url(../../images/bg-image-tab-2x.jpg)
+                    url(../images/bg-image-tab-2x.jpg)
             }}
     @include desktop{
         padding:118px 200px;
@@ -50,13 +50,13 @@
         linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../../images/bg-image.jpg);
+            url(../images/bg-image.jpg);
             @include retina {
                 background-image:
                 linear-gradient(
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                    url(../../images/bg-image-2x.jpg)
+                    url(../images/bg-image-2x.jpg)
             }
     }
     }
