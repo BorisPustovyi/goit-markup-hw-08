@@ -1,0 +1,102 @@
+
+.hero .container{
+    
+    padding:0;
+    @include mobile {max-width: 360px;}
+    @include tablet {max-width: 360px}
+    @include desktop{ max-width: 696px; }
+}
+
+.hero{
+
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color:var(--hero-and-footer-background-color) ;
+    padding:118px 40px;
+    background-image:
+    linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../../images/bg-image-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    @include retina {
+        background-image:
+        linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../../images/bg-image-mob-2x.jpg)
+    }
+
+    @include mobile{padding:118px 60px;}
+    @include tablet{
+        padding:118px 204px;
+        background-image:
+        linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../../images/bg-image-tab-1x.jpg);
+            @include retina {
+                background-image:
+                linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../../images/bg-image-tab-2x.jpg)
+            }}
+    @include desktop{
+        padding:118px 200px;
+        background-image:
+        linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../../images/bg-image.jpg);
+            @include retina {
+                background-image:
+                linear-gradient(
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../../images/bg-image-2x.jpg)
+            }
+    }
+    }
+    
+    .hero-title{
+    font-weight: 900                                    ;
+    font-size: 18px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--wighte-color);
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile {font-size: 26px}
+    @include tablet {font-size: 26px}
+    @include desktop{font-size: 44px; line-height: 1.36}
+    }
+    
+    .hero-button{
+        cursor: pointer;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color:var(--wighte-color);
+        background-color:var(--accent-text-color);
+        min-width: 160px;
+        width: 200px;
+        height: 50px;
+        padding:10px 24px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        border-color: transparent;
+        @include desktop{width: 210px;padding:10px 32px;}
+        }
+    

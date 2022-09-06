@@ -1,0 +1,79 @@
+.backdrop
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background-color:rgba(0, 0, 0, 0.2);
+    transition: 
+    opacity var(--animation-rule), 
+    visibility var(--animation-rule);
+}
+
+.modal{
+    padding: 40px;
+    position: absolute;
+    min-width: 290px;
+    width: 90vw;
+    height: 550px;  
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1);
+    background-color: var(--wighte-color);
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform var(--animation-rule);
+    .backdrop.is-hidden &
+    {transform: translate(-50%, -50%) scale(0);}
+    @include mobile{
+        width: 450px;
+        height: 609px;}
+    @include desktop{
+        width: 528px;
+        height: 581px;}
+}
+
+
+.modal-close{
+position: absolute;
+display: flex;
+width: 30px;
+height: 30px;
+background-color: transparent;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius:50%;
+top: 8px;
+right: 8px;
+transition: fill var(--animation-rule);
+&:hover, &:focus
+    { fill: var(--accent-text-color);}
+&-icon{
+        align-self: center;
+        align-items: center;
+    }   
+}
+
+
+.modal-title
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 12px;
+    @include mobile{
+        font-size: 20px;
+        line-height: 1.5;};
+    @include desktop{
+        font-size: 20px;
+        line-height: 1.15;
+    }
+    
+}
+
+

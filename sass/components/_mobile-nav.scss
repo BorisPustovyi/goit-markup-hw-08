@@ -1,0 +1,96 @@
+.mobile-menu {
+    position:fixed;
+    z-index: 2;
+    top:0;
+    padding: 48px 83px 48px 40px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--wighte-color);
+    .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;}
+    overflow: auto  ;
+}
+
+.menu-open
+{  width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border:none;
+    display: inline-block;
+    padding:0;
+    @include tablet{display: none;}
+}
+.menu-close {
+    position:absolute;
+    top: 10px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border:none;
+    display:block;
+    margin-bottom: 6px;
+    margin-left: auto;
+    padding:0;
+    transition: fill var(--animation-rule);
+&:hover, &:focus
+    { fill: var(--accent-text-color);}
+}
+// .mob-current{color:var(--accent-text-color);}
+.mobile-nav__item:not(:last-child){margin-bottom: 32px;}
+.mobile-menu__item:not(:last-child){margin-bottom: 32px;}
+.media-list {
+    margin-top: 64px;
+    display: flex;
+}
+
+.mobile-nav__link 
+{
+    color:var(--title-text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    @include mobile{font-size: 40px;}
+}   
+
+.mobile-menu__tel 
+{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+    @include mobile{font-size:34px ;}}
+
+.mobile-menu__mail 
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    @include mobile{font-size:24px ;}}
+.media-link
+{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--accent-text-color);
+@include mobile{font-size: 18px;}
+}
+.media-item:not(:first-child){ padding-left: 10px;}
+.media-item:not(:last-child)
+{
+padding-right: 10px;
+border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+
+
