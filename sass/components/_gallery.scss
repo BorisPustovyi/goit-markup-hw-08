@@ -1,10 +1,8 @@
 
 .what-we-do{display: none;  @include desktop {display: block;}}
-.gallery-list{display:flex; gap:30px}
-  
-
-.gallery-item{position:relative;}
-.gallery-item-text{
+.gallery{display: flex; gap:30px}
+.gallery__item{position:relative;}
+.gallery__text{
     display:flex;
     position: absolute;
     bottom: 0; 

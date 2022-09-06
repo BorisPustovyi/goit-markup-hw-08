@@ -798,18 +798,18 @@ ul {
   }
 }
 
-.gallery-list {
+.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
-.gallery-item {
+.gallery__item {
   position: relative;
 }
 
-.gallery-item-text {
+.gallery__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
