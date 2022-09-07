@@ -52,7 +52,7 @@ img {
 
 .is-hidden {
   opacity: 0;
-  visibility: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -454,6 +454,8 @@ ul {
   height: 100vh;
   background-color: var(--wighte-color);
   overflow: auto;
+  -webkit-transition: opacity var(--animation-rule), visibility var(--animation-rule);
+  transition: opacity var(--animation-rule), visibility var(--animation-rule);
 }
 .mobile-menu .container {
   height: 100%;
@@ -632,7 +634,7 @@ ul {
   background-color: var(--hero-and-footer-background-color);
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-image-mob-1x.jpg);
+  background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4), url(../images/bg-image-mob-1x-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

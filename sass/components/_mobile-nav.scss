@@ -13,6 +13,7 @@
     align-items: baseline;
     justify-content: space-between;}
     overflow: auto  ;
+    transition: opacity var(--animation-rule),visibility var(--animation-rule); 
 }
 
 .menu-open
