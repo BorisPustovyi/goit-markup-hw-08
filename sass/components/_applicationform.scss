@@ -89,7 +89,8 @@ outline: transparent;
     justify-content: center;
     text-align: center; 
     margin-bottom: 20px;
-    @include mobile{justify-content:normal; margin-bottom: 30px;}}
+    @include mobile{justify-content:normal; margin-bottom: 30px;}
+    @include desktop   {justify-content: center}}
     
 .check-text{
     display:flex;
