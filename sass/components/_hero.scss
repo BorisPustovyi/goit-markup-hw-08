@@ -17,7 +17,7 @@
     background-image:linear-gradient
     (rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)),
-    url(../images/bg-image-mob-1x-min.jpg);
+    url(../images/bg-img-1x-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -26,9 +26,8 @@
         linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../images/bg-image-mob-2x.jpg)};
+            url(../images/bg-img-2x-min.jpg)};
     @include tablet{
-        
         background-image:
         linear-gradient(
             rgba(47, 48, 58, 0.4),
@@ -39,7 +38,7 @@
                 linear-gradient(
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                    url(../images/bg-image-tab-2x.jpg)}};
+                    url(../images/bg-image-tab-2x-min.jpg)}};
     @include desktop{
         padding-top: 200px ;
         padding-bottom:200px ;
